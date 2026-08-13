@@ -4687,3 +4687,27 @@ input, select, textarea {
 		}
 
 	}
+/* Adventure Works Dashboard Images */
+
+.dashboard-images {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.dashboard-images img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Stack images on smaller screens */
+@media screen and (max-width: 736px) {
+    .dashboard-images {
+        flex-direction: column;
+    }
+
+    .dashboard-images img {
+        width: 100%;
+    }
+}
