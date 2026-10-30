@@ -12,6 +12,158 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
+	<style>
+        /* General layout */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .section-heading {
+            margin-bottom: 1.5em;
+        }
+
+        .section-heading p {
+            margin-bottom: 0;
+        }
+
+        /* About section */
+        .about-intro {
+            margin-bottom: 2em;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .info-card {
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 1.5em;
+            height: 100%;
+        }
+
+        .info-card h3 {
+            margin-bottom: 0.8em;
+        }
+
+        .info-card p {
+            margin-bottom: 0.5em;
+        }
+
+        .info-card .fa {
+            margin-right: 0.5em;
+        }
+
+        .resume-button {
+            margin-top: 1em;
+        }
+
+        /* Skills section */
+        .skill-category {
+            margin-bottom: 2em;
+        }
+
+        .skill-category h3 {
+            margin-bottom: 0.8em;
+            font-size: 1.05em;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65em;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            padding: 0.55em 1em;
+            border: 1px solid rgba(255,255,255,0.35);
+            border-radius: 25px;
+            font-size: 0.8em;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            color: #ffffff;
+            background: rgba(255,255,255,0.06);
+            line-height: 1.5;
+        }
+
+        .skill-tag:hover {
+            background: rgba(255,255,255,0.18);
+            border-color: #ffffff;
+        }
+
+        /* Project cards */
+        .project-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 1.5em;
+        }
+
+        .project-skills {
+            margin: 1.5em 0;
+        }
+
+        .project-skills h4 {
+            font-size: 0.8em;
+            margin-bottom: 0.8em;
+            letter-spacing: 0.1em;
+        }
+
+        .project-description {
+            margin-bottom: 1em;
+        }
+
+        /* Contact */
+        .contact-details {
+            overflow-wrap: anywhere;
+        }
+
+        /* Mobile responsive design */
+        @media screen and (max-width: 736px) {
+            #intro {
+                padding: 4em 1.5em 3em;
+            }
+
+            #intro h1 {
+                font-size: 2.5em;
+            }
+
+            #intro p {
+                font-size: 0.9em;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 1em;
+            }
+
+            .info-card {
+                padding: 1.2em;
+            }
+
+            .skill-tags {
+                gap: 0.5em;
+            }
+
+            .skill-tag {
+                font-size: 0.72em;
+                padding: 0.45em 0.8em;
+            }
+
+            .project-image {
+                margin-bottom: 1em;
+            }
+
+            #main > article {
+                padding: 2em 1.5em;
+            }
+        }
+    </style>
+</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -22,13 +174,12 @@
 						<h1>Phyo Thiri Tar Portfolio<br />
 						</h1>
 						<p>Hi, I am Phyo Thiri Tar, a fresh graduate in Information and Communication Technology (ICT), and am building my career around data, research and analytical problem-solving.
-							I enjoy understanding problems through research, observation and data rather than making assumptions. 
-							I am naturally curious and I research and compare information from different sources and look for patterns before drawing conclusions.
-							Through my academic projects, internship experience and personal projects, I have been developing my skills in SQL, Power BI, Excel 
-							and data analysis. I am still at the beginning of my career but I am committed to learning and improving every day.
-							My long-term goal is to become someone my teammates can rely on - not only for analytical work
-							but also as a colleague who can share knowledge and support others. I am excited to ask questions, explore new challenges 
-							and take on real-life projects where I can turn information into meaningful insights.</p>
+						I enjoy exploring data, identifying patterns and turning information
+                         into meaningful insights.
+						 <br /><br />
+
+            Currently developing my skills in SQL, Excel and Power BI,
+            with a focus on continuous learning and practical problem-solving.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -50,9 +201,164 @@
 									<li><a href="https://github.com/PhyoThiri2325" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 							        <li><a href="https://www.linkedin.com/in/phyo-thiri-tar-21b535372/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 					</nav>
+				 <!-- ABOUT ME -->
+        <article id="about">
+
+            <header class="section-heading">
+                <h2>About Me</h2>
+                <p>A little about my background and education.</p>
+            </header>
+
+            <div class="about-intro">
+                <p>
+                    I am an ICT graduate with an interest in data analytics
+                    and research. I enjoy understanding problems through
+                    research, observation and data rather than assumptions.
+                    Through academic projects, internship experience and
+                    independent learning, I have been developing practical
+                    skills in data analysis and visualization.
+
+                    My goal is to grow as a data professional, contribute
+                    to meaningful projects and continue learning from
+                    experienced teammates.
+                </p>
+            </div>
+
+
+            <div class="about-grid">
+
+                <!-- Education -->
+                <div class="info-card">
+
+                    <h3>
+                        <span class="icon solid fa-graduation-cap"></span>
+                        Education
+                    </h3>
+
+                    <h4>Bachelor of Science</h4>
+
+                    <p><strong>Information and Communication Technology</strong></p>
+
+                    <p>Rangsit University</p>
+
+                    <p>First-Class Honours</p>
+
+                    <p>GPA: 3.82 / 4.00</p>
+
+                    <p>2026</p>
+
+                </div>	
+				!-- Resume -->
+                <div class="info-card">
+
+                    <h3>
+                        <span class="icon solid fa-file-pdf"></span>
+                        My Resume
+                    </h3>
+
+                    <p>
+                        Interested in learning more about my education,
+                        experience, technical skills and projects?
+                    </p>
+
+                    <p>
+                        Download my resume to see my full professional
+                        background.
+                    </p>
+
+                    <ul class="actions">
+                        <li>
+                            <a href="assets/Phyo_Thiri_Tar_Resume.pdf"
+                               class="button primary resume-button"
+                               download>
+                                <span class="icon solid fa-download"></span>
+                                Download Resume
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </article>
+				<!-- TECHNICAL SKILLS -->
+        <article id="skills">
+
+            <header class="section-heading">
+                <h2>Technical Skills</h2>
+                <p>Tools and technologies I have been learning and applying in projects.</p>
+            </header>
+
+
+            <!-- SQL -->
+            <div class="skill-category">
+
+                <h3>
+                    <span class="icon solid fa-database"></span>
+                    SQL & Database
+                </h3>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Microsoft SQL Server</span>
+                    <span class="skill-tag">Joins</span>
+                    <span class="skill-tag">Subqueries</span>
+                    <span class="skill-tag">CTEs</span>
+                    <span class="skill-tag">Window Functions</span>
+                    <span class="skill-tag">Aggregate Functions</span>
+                </div>
+
+            </div>
+
+
+            <!-- BI -->
+            <div class="skill-category">
+
+                <h3>
+                    <span class="icon solid fa-chart-bar"></span>
+                    Data Analysis & Visualization
+                </h3>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">DAX</span>
+                    <span class="skill-tag">Power Query</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Pivot Tables</span>
+                    <span class="skill-tag">Looker Studio</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">Data Cleaning</span>
+                </div>
+
+            </div>
+
+
+            <!-- Other tools -->
+            <div class="skill-category">
+
+                <h3>
+                    <span class="icon solid fa-laptop"></span>
+                    Other Tools
+                </h3>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">Python (Basic)</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Canva</span>
+                    <span class="skill-tag">Microsoft Office</span>
+                </div>
+
+            </div>
+
+        </article>
 
 				<!-- Main -->
 					<div id="main">
+						<header class="major" id="projects">
+            <h2>My Projects</h2>
+            <p>Data analysis projects and practical applications of my technical skills.</p>
+        </header>
 
 						<!-- Featured Post -->
 							<article>
@@ -75,12 +381,23 @@
     </div>
 </div>
 								
-									<p> An interactive Power BI dashboard designed to analyze employee demographics,
+									<p class="project-description"> An interactive Power BI dashboard designed to analyze employee demographics,
         workforce distribution, salary, and tenure. The report explores employee
         composition by department, gender, pay type, years of service, and
         organizational level.</p>
 								
-								
+								<div class="project-skills">
+
+                <h4>SKILLS USED</h4>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">DAX</span>
+                    <span class="skill-tag">Data Modeling</span>
+                    <span class="skill-tag">Data Visualization</span>
+                </div>
+
+            </div>
 								<ul class="actions special">
 												<li><a href="https://github.com/PhyoThiri2325/Data-Portfolio/blob/main/adventure_works_hr_analysis/Report/adventure_works_hr_project.pbix" target="_blank" class="button">View Dashboard</a></li>
 										<li><a href="https://github.com/PhyoThiri2325/Data-Portfolio/blob/main/adventure_works_hr_analysis/Report/adventure_works_hr_report.pdf" target="_blank" class="button">View Report</a></li>
@@ -99,7 +416,21 @@
         <img src="images/thailand_nutrition_image.png" alt="Thailand Nutrition Insights Power BI Dashboard" style="width: 100%; height: auto;" />
                                  </div>
 									
-									<p>Developed independently during my internship to build practical data analytics skills. Using a publicly available Kaggle dataset, I analyzed food supply and nutrition indicators in Thailand and created an interactive Power BI dashboard with DAX measures.</p>
+									<p class="project-description">Developed independently during my internship to build practical data analytics skills. Using a publicly available Kaggle dataset, I analyzed food supply and nutrition indicators in Thailand and created an interactive Power BI dashboard with DAX measures.</p>
+
+									 <div class="project-skills">
+
+                <h4>SKILLS USED</h4>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">DAX</span>
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Data Visualization</span>
+                </div>
+
+            </div>
 									<ul class="actions special">
 										<li><a href="https://github.com/PhyoThiri2325/Data-Portfolio/blob/main/nutrition_insight_analysis/report/thailand_nutrition_insights_project.pbix" target="_blank" class="button">View Project</a></li>
 										 <li><a href="https://github.com/PhyoThiri2325/Data-Portfolio/blob/main/nutrition_insight_analysis/report/thailand_nutrition_insights_report.pdf" target="_blank" class="button">View Report</a></li>
@@ -127,11 +458,23 @@
     </div>
 </div>
 								
-									<p> I analyzed university student data to understand patterns in dropout, enrollment and graduation. The project looks at factors
+									<p class="project-description"> I analyzed university student data to understand patterns in dropout, enrollment and graduation. The project looks at factors
 									such as academic performance, financial circumstances, age and degree program. The analysis
 									highlighted academic performance and financial factors as important areas associated with
 									student dropout and potential opportunities for early student support.</p>
-								
+								<div class="project-skills">
+
+                <h4>SKILLS USED</h4>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">Business Insights</span>
+                </div>
+
+            </div>
+
 								
 								<ul class="actions special">
 												<li><a href="https://github.com/PhyoThiri2325/Data-Portfolio/blob/main/student_dropout_analysis/report/student_dropout_analysis.pbix" target="_blank" class="button">View Dashboard</a></li>
@@ -156,11 +499,36 @@
 
 
 								
-									<p> Used Microsoft SQL Server to analyse sales performance, monthly sales trends and product category performance using the AdventureWorks sample database.
-									Developed SQL queries to answer 12 business questions, exploring sales before and after discounts, average order value, monthly sales changes and product category contributions.
-									Applied multi-table joins, aggregate functions, subqueries, Common Table Expressions (CTEs) and window functions such as 
-									RANK() and LAG() to identify sale patterns and generate business insights.</p>
-								
+								 <p class="project-description">
+                Used Microsoft SQL Server to analyze sales performance,
+                monthly sales trends and product category performance
+                using the AdventureWorks sample database.
+
+                Developed SQL queries to answer 12 business questions,
+                exploring sales before and after discounts, average order
+                value, monthly sales changes and product category
+                contributions.
+
+                Applied multi-table joins, aggregate functions,
+                subqueries, Common Table Expressions (CTEs) and window
+                functions such as RANK() and LAG() to identify sales
+                patterns and generate business insights.
+            </p>
+								<div class="project-skills">
+
+                <h4>SKILLS USED</h4>
+
+                <div class="skill-tags">
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">Joins</span>
+                    <span class="skill-tag">CTEs</span>
+                    <span class="skill-tag">Subqueries</span>
+                    <span class="skill-tag">Window Functions</span>
+                    <span class="skill-tag">Aggregations</span>
+                </div>
+
+            </div>
+
 								
 								<ul class="actions special">
 												<li><a href="https://github.com/PhyoThiri2325/Data-Portfolio/blob/main/adventure_works_sales_sql_project/scripts" target="_blank" class="button">View SQL Project</a></li>
